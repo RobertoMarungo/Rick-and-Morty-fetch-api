@@ -20,9 +20,11 @@ const getCharacters = () => {
 
     while (page <= numOfPages) {
         page++;
-        fetch(`https://rickandmortyapi.com/api/character/?page=${page}`).then(
-            res => res.json()
-        );
+        fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
+            .then(res => res.json())
+            .then(data =>
+                data.result.forEach(character => renderCharacter(character))
+            );
     }
 };
 
