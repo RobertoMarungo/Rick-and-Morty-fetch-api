@@ -1,6 +1,9 @@
 const toggleMode = () => {};
 
-const renderCharacter = () => {};
+const renderCharacter = () => {
+    let card = document.createElement('li');
+    card.className = 'card';
+};
 
 const getCharacters = () => {
     const numOfPages = 20;
