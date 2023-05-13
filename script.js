@@ -1,6 +1,6 @@
 const toggleMode = () => {};
 
-const renderCharacter = () => {
+const renderCharacter = character => {
     let card = document.createElement('li');
     card.className = 'card';
     card.innerHTML = `
@@ -12,6 +12,8 @@ const renderCharacter = () => {
       <p>Location: ${character.location.name}</P>
       <p>${character.species} - ${character.status}</P>
     </div>`;
+
+    document.getElementById('#character-list').appendChild(card);
 };
 
 const getCharacters = () => {
@@ -23,7 +25,7 @@ const getCharacters = () => {
         fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
             .then(res => res.json())
             .then(data =>
-                data.result.forEach(character => renderCharacter(character))
+                data.results.forEach(character => renderCharacter(character))
             );
     }
 };
