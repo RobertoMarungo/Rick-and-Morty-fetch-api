@@ -1,1 +1,5 @@
+const getCharacters = () => {};
+
+const init = () => {};
+
 document.addEventListener('DOMContentLoaded', init);
