@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Chewy', cursive;
+    color: #b7e4f9ff;
+}
+
+h1 {
+    font-size: 13rem;
+    text-align: center;
+    margin: 8vh 0;
+}
+
+button {
+    width: 500px;
+    border: none;
+    height: 60px;
+    background-color: #b7e4f9ff;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Chewy', cursive;
+}
