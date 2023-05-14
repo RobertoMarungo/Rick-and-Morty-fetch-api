@@ -23,3 +23,5 @@ To run this project locally, follow these steps:
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
 3. Click the toggle button to switch between light and dark mode.
+
+Note: This project requires an internet connection to fetch character data from the Rick and Morty API.
