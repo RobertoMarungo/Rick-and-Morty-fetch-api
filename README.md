@@ -11,3 +11,5 @@ This project uses the [Rick and Morty API](https://rickandmortyapi.com/) to fetc
 ## Code Explanation
 
 The `renderCharacter` function takes a character object as a parameter, creates an HTML card element, and assigns the character's properties to each HTML element in the card. The function then appends the card to an unordered list with an ID of `character-list`.
+
+The `getCharacters` function fetches character data from the Rick and Morty API by making multiple requests, each for a different page of characters. The number of pages to fetch is set to 20. For each page, the function uses the `renderCharacter` function to create a card for each character and append it to the `character-list` unordered list.
