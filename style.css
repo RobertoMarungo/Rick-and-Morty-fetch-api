@@ -25,3 +25,25 @@ button {
     display: block;
     font-family: 'Chewy', cursive;
 }
+
+/* Light mode styles */
+body {
+    background-color: #97ce4c;
+}
+
+li.card {
+    background-color: #fff;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 15px;
+    margin-top: 8vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+li.card img {
+    border-radius: 15px;
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
