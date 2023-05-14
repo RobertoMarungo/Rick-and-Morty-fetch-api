@@ -65,6 +65,17 @@ const toggleMode = () => {
 };
 ```
 
+The `init` function is the entry point of the application. It calls the `getCharacters` function to fetch and render the character data, and sets up an event listener on the toggle button to toggle dark mode when clicked.
+
+```javascript
+const init = () => {
+    getCharacters();
+
+    const darkModeToggle = document.querySelector('button');
+    darkModeToggle.addEventListener('click', toggleMode);
+};
+```
+
 ## Getting Started
 
 To run this project locally, follow these steps:
