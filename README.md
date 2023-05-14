@@ -27,3 +27,7 @@ To run this project locally, follow these steps:
 ## Note
 
 This project requires an internet connection to fetch character data from the Rick and Morty API.
+
+## App Example
+
+![](https://github.com/RobertoMarungo/Rick-and-Morty-fetch-api/blob/main/Rick%20and%20morty%20Giph.gif)
