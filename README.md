@@ -76,6 +76,12 @@ const init = () => {
 };
 ```
 
+The `init` function is called after the event listner for `DOMContentLoaded` is executed.
+
+```javascript
+document.addEventListener('DOMContentLoaded', init);
+```
+
 ## Getting Started
 
 To run this project locally, follow these steps:
