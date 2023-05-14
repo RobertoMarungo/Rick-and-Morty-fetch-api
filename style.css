@@ -47,3 +47,36 @@ li.card img {
     height: 360px;
     object-fit: cover;
 }
+
+.content {
+    padding: 8px;
+}
+
+.content p {
+    font-size: 1.3rem;
+    color: #7f8c9b;
+    line-height: 150%;
+    text-align: center;
+}
+
+.content h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    button {
+        width: 90%;
+        margin: 0 auto 16px;
+    }
+
+    li.card img {
+        width: 100%;
+        height: auto;
+    }
+}
