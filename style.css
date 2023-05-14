@@ -26,9 +26,20 @@ button {
     font-family: 'Chewy', cursive;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* Light mode styles */
 body {
     background-color: #97ce4c;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
 li.card {
