@@ -14,6 +14,22 @@ The `renderCharacter` function takes a character object as a parameter, creates 
 
 The `getCharacters` function fetches character data from the Rick and Morty API by making multiple requests, each for a different page of characters. The number of pages to fetch is set to 20. For each page, the function uses the `renderCharacter` function to create a card for each character and append it to the `character-list` unordered list.
 
+```javascript
+const getCharacters = () => {
+    const numOfPages = 20;
+    let page = 0;
+
+    while (page <= numOfPages) {
+        page++;
+        fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
+            .then(res => res.json())
+            .then(data =>
+                data.results.forEach(character => renderCharacter(character))
+            );
+    }
+};
+```
+
 The `toggleMode` function toggles a dark mode class on the webpage's body, unordered list, and toggle button. The text of the toggle button is also changed to "Light Mode" or "Dark Mode" depending on whether the body has the dark mode class or not.
 
 ## Getting Started
