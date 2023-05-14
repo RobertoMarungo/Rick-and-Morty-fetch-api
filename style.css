@@ -91,3 +91,27 @@ li.card img {
         height: auto;
     }
 }
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: #97ce4c;
+}
+
+ul.dark-mode li {
+    background-color: #333;
+    color: #fff;
+}
+
+button.dark-mode {
+    background-color: #97ce4c;
+    color: #fff;
+}
+
+ul.dark-mode {
+    padding: 0;
+}
+
+ul.dark-mode li {
+    box-shadow: none;
+}
