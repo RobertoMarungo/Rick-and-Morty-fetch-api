@@ -17,3 +17,9 @@ The `getCharacters` function fetches character data from the Rick and Morty API 
 The `toggleMode` function toggles a dark mode class on the webpage's body, unordered list, and toggle button. The text of the toggle button is also changed to "Light Mode" or "Dark Mode" depending on whether the body has the dark mode class or not.
 
 ## Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in your web browser.
+3. Click the toggle button to switch between light and dark mode.
