@@ -4,7 +4,18 @@ the "dark-mode" class on the body, button, and ul elements
 of the HTML page. It also changes the text of the button to 
 "Light Mode" or "Dark Mode" depending on the current mode.
 */
-const toggleMode = () => {};
+const toggleMode = () => {
+    const body = document.body;
+    const ul = document.querySelector('ul');
+    const button = document.querySelector('button');
+
+    body.classList.toggle('dark-mode');
+    button.classList.toggle('dark-mode');
+    ul.classList.toggle('dark-mode');
+    button.innerText = body.classList.contains('dark-mode')
+        ? 'Light Mode'
+        : 'Dark Mode';
+};
 
 /*
 The renderCharacter function takes a character object as a parameter
@@ -59,6 +70,9 @@ on the button to toggle the dark mode when clicked.
 */
 const init = () => {
     getCharacters();
+
+    const darkModeToggle = document.querySelector('button');
+    darkModeToggle.addEventListener('click', toggleMode);
 };
 
 /*
